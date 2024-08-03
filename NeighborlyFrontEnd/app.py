@@ -2,6 +2,8 @@ import logging.config
 import os
 from flask import Flask, Blueprint, request, jsonify, render_template, redirect, url_for
 from flask_bootstrap import Bootstrap
+import sys
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 import settings
 import requests
 import json
